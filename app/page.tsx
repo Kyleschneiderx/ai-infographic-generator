@@ -1,7 +1,5 @@
 "use client";
 
-console.log('Hello World');
-
 import { useState, useRef, useCallback } from "react";
 
 type Step = "idle" | "scraping" | "insights" | "images" | "pdf" | "complete" | "error";
