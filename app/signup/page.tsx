@@ -89,6 +89,14 @@ export default function SignupPage() {
             infographic<span className="text-accent">gen</span>
           </span>
         </Link>
+        <div className="flex items-center gap-4">
+          <Link href="/pricing" className="text-sm font-medium text-text-muted hover:text-foreground transition-colors">
+            Pricing
+          </Link>
+          <Link href="/signin" className="text-sm font-medium text-accent hover:text-accent-hot transition-colors">
+            Sign in
+          </Link>
+        </div>
       </header>
 
       {/* Main content */}

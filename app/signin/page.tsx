@@ -77,6 +77,14 @@ export default function SigninPage() {
             infographic<span className="text-accent">gen</span>
           </span>
         </Link>
+        <div className="flex items-center gap-4">
+          <Link href="/pricing" className="text-sm font-medium text-text-muted hover:text-foreground transition-colors">
+            Pricing
+          </Link>
+          <Link href="/signup" className="px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-purple-600 to-fuchsia-600 hover:from-purple-500 hover:to-fuchsia-500 transition-all">
+            Sign up
+          </Link>
+        </div>
       </header>
 
       {/* Main content */}
