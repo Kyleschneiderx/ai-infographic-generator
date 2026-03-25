@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useCallback } from "react";
+import Link from "next/link";
 
 type Step = "idle" | "scraping" | "insights" | "images" | "pdf" | "complete" | "error";
 
@@ -146,6 +147,14 @@ export default function Home() {
           <span className="text-sm font-semibold tracking-wide text-foreground/70">
             infographic<span className="text-accent">gen</span>
           </span>
+        </div>
+        <div className="flex items-center gap-4">
+          <Link href="/signin" className="text-sm font-medium text-accent hover:text-accent-hot transition-colors">
+            Sign in
+          </Link>
+          <Link href="/signup" className="px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-purple-600 to-fuchsia-600 hover:from-purple-500 hover:to-fuchsia-500 transition-all">
+            Sign up
+          </Link>
         </div>
       </header>
 
