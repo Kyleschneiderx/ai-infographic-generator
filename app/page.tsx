@@ -149,7 +149,7 @@ export default function Home() {
           </span>
         </Link>
         <div className="flex items-center gap-4">
-          <Link href="/pricing" className="text-sm font-medium text-text-muted hover:text-foreground transition-colors">
+          <Link href="/pricing" className="px-4 py-2 rounded-xl text-sm font-semibold border border-white/[0.10] text-text-muted hover:text-foreground hover:border-white/[0.20] transition-all">
             Pricing
           </Link>
           <Link href="/signin" className="text-sm font-medium text-accent hover:text-accent-hot transition-colors">
@@ -238,16 +238,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Pricing CTA */}
-        {step === "idle" && (
-          <p className="text-xs text-text-muted/50 mt-4 text-center">
-            Need more?{" "}
-            <Link href="/pricing" className="text-accent hover:text-accent-hot transition-colors underline underline-offset-2">
-              View pricing plans
-            </Link>
-          </p>
-        )}
 
         {/* Progress / Result area */}
         <div
