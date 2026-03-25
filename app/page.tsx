@@ -137,7 +137,7 @@ export default function Home() {
 
       {/* Top bar */}
       <header className="relative z-10 flex items-center justify-between px-8 py-5">
-        <div className="flex items-center gap-2.5">
+        <Link href="/" className="flex items-center gap-2.5">
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-fuchsia-500 flex items-center justify-center">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
@@ -147,7 +147,7 @@ export default function Home() {
           <span className="text-sm font-semibold tracking-wide text-foreground/70">
             infographic<span className="text-accent">gen</span>
           </span>
-        </div>
+        </Link>
         <div className="flex items-center gap-4">
           <Link href="/pricing" className="text-sm font-medium text-text-muted hover:text-foreground transition-colors">
             Pricing
@@ -238,6 +238,16 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Pricing CTA */}
+        {step === "idle" && (
+          <p className="text-xs text-text-muted/50 mt-4 text-center">
+            Need more?{" "}
+            <Link href="/pricing" className="text-accent hover:text-accent-hot transition-colors underline underline-offset-2">
+              View pricing plans
+            </Link>
+          </p>
+        )}
 
         {/* Progress / Result area */}
         <div
